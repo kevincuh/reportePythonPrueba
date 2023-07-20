@@ -4,7 +4,7 @@ ancho, alto = legal
 lista = []
 productos = []
 
-for i in range(6):
+for i in range(10):
     lista.append(i)
     productos.append(input("Ingresa tu producto "))
 #CAMBIEN SU RUTA
@@ -22,7 +22,7 @@ for i in range(len(lista)):
     c.drawString(inicialX, inicialY,str(lista[i]))
     c.drawString(inicialX + incremento, inicialY,str(productos[i]))
     inicialY = inicialY-decremento
-    if(contadorElementos==2):
+    if(contadorElementos==5):
         c.showPage()
         inicialY = 950
         contadorElementos=0   
